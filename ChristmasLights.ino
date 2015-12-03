@@ -27,6 +27,8 @@ void setup() {
 
 void loop() {
 
+  strip.setBrightness(20);
+
   megaRandom(20);
   
   strobe(20);
