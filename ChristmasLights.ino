@@ -31,11 +31,27 @@ void loop() {
 
   megaRandom(20);
   
-  strobe(20);
-  strobe(20);
-  strobe(20);
-  strobe(20);
- 
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+  strobe();
+   
   colorWipe(strip.Color(255, 0, 0), 50); // Red
   colorWipe(strip.Color(0, 255, 0), 50); // Green
   colorWipe(strip.Color(0, 0, 255), 50); // Blue
@@ -49,6 +65,12 @@ void loop() {
   theaterChaseRainbow(50);
   
   
+}
+
+void strobe() {
+  uint8_t strobeWait = random(0,100);
+
+  strobe(strobeWait);
 }
 
 void strobe(uint8_t wait) {
